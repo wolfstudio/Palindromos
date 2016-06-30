@@ -40,7 +40,7 @@ $(document).on('ready', function(){
 			    complete: function(jqXHR, estado){
 			        console.log(estado);
 			    },
-			    timeout: 10000	// Si no se recibe una respuesta en 2 segundos envía error
+			    timeout: 10000000	// Si no se recibe una respuesta en 10 segundos envía error
 			}); 
 		} else if($("#word").val().length === 1) {
 			alert('La cadena debe de tener mas de un caracter');
