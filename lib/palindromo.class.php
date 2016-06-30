@@ -43,7 +43,11 @@ class palindromo {
       $longitud = strlen($palindro);
       for ($i = 0; $i <= $longitud; $i++){
         // Procesamos la cadena con los elementos necesarios, la concatenamos y agregamos al arreglo $palindrome
-        $palindrome[] = substr($palindro, 0, $i) . $cadena[0] . substr($palindro, $i);
+        //$palindrome[] = substr($palindro, 0, $i) . $cadena[0] . substr($palindro, $i);
+        $palabra = substr($palindro, 0, $i) . $cadena[0] . substr($palindro, $i);
+        if(!(in_array($palabra, $palindrome))){
+          $palindrome[] = $palabra;
+        }
       }
     }
 
