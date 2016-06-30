@@ -67,6 +67,8 @@ class palindromo {
       }
     }
 
+    if(empty($pl)){ return array('NO HAY PALINDROMOS');}
+
     // Returnamos solo las palabras palindromas
     return $pl;
   }
